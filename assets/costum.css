@@ -1,0 +1,10 @@
+/* CSS file in the 'assets' folder */
+
+/* This targets the modebar container */
+.modebar {
+    position: absolute !important;
+    top: auto !important;  /* This disables the top positioning */
+    bottom: -50px !important;  /* This positions it 10px from the bottom */
+    right: 10px !important;  /* This positions it 10px from the right */
+}
+
