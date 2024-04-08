@@ -526,6 +526,7 @@ def create_gantt_chart(sorted_df, color_column, task_order, pm_colors, phase_col
                           labels={"Task": "Projects", "Phase": "Project Phase", "PM": "Project Manager","Department":"Department"},
                           color_discrete_map=phase_colors,  # Use the Phase color map
                           category_orders={"Task": task_order})  # Specify the order of tasks
+        '''
         fig.update_layout(showlegend=False)
 
         # Define starting positions for the custom legend
@@ -559,7 +560,6 @@ def create_gantt_chart(sorted_df, color_column, task_order, pm_colors, phase_col
                 xanchor="left",
                 yanchor="middle",
             )
-
         # Update the layout to accommodate the custom legend
         fig.update_layout(
             margin=dict(r=170),  # Adjust the right margin to fit the custom legend
@@ -571,6 +571,8 @@ def create_gantt_chart(sorted_df, color_column, task_order, pm_colors, phase_col
                 x=1
             )
         )
+        '''
+
 
     return fig
 
